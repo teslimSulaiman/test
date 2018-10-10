@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Teslim_Test>
+            <version>3.1.5.7</version>
+        </Teslim_Test>
+    </modules>
+    <global>
+        
+
+        <helpers>
+            <test>
+                <class>Teslim_Test_Helper</class>
+            </test>
+        </helpers>
+
+        <blocks>
+            <test>
+                <class>Teslim_Test_Block</class>
+            </test>
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_grid>Teslim_Test_Block_Adminhtml_Catalog_Product_Grid</catalog_product_grid>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+    </global>
+
+   <frontend>
+        <routers>
+            <catalog>
+                <use>standard</use>
+                <args>
+                    <module>Teslim_Test</module>
+                    <frontName>test</frontName>
+                </args>
+            </catalog>
+        </routers>
+    </frontend>
+
+    
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <module>Teslim_Test_Adminhtml</module>
+                        <frontName>teslim</frontName>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    
+
+
+</config>

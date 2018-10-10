@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Teslim_Test>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Teslim_Test>
+    </modules>
+</config>

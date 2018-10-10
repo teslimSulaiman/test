@@ -1,0 +1,18 @@
+<config>
+    <menu>
+        <!-- Will be a child of the System option in the menu, you can use Sales, Catalog, Newsletter, etc -->
+        <system>
+            <children>
+                <!-- This is our module identifier -->
+                <teslim_test>
+ 
+                    <title>Teslim Backend Module</title>
+                    <sort_order>400</sort_order>
+ 
+                    <!--The action composed by frontname/controller/action-->
+                    <action>teslim/adminhtml_index/index</action>
+                </teslim_test>
+            </children>
+        </system>
+    </menu>
+</config>
